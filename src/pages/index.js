@@ -315,21 +315,23 @@ export default function Home() {
             Tidak ada tugas yang tersedia saat ini.
           </p>
         ) : (
-          tasks.map((task) => (
-            <Card
-              key={task._id}
-              judul={task.judul}
-              tugas={task.tugas}
-              catatan={task.catatan}
-              status={task.status}
-              id={task._id}
-              handleDelete={() => deleteTask(task._id)}
-              statusTugas={task.status}
-              handleEdit={() => handleEditTask(task._id)}
-              handleKerjakan={() => handleKerjakanTask(task._id)}
-              handleSelesai={() => handleSelesaiTask(task._id)}
-            />
-          ))
+          tasks
+            .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+            .map((task) => (
+              <Card
+                key={task._id}
+                judul={task.judul}
+                tugas={task.tugas}
+                catatan={task.catatan}
+                status={task.status}
+                id={task._id}
+                handleDelete={() => deleteTask(task._id)}
+                statusTugas={task.status}
+                handleEdit={() => handleEditTask(task._id)}
+                handleKerjakan={() => handleKerjakanTask(task._id)}
+                handleSelesai={() => handleSelesaiTask(task._id)}
+              />
+            ))
         )}
       </div>
 
