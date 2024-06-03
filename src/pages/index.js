@@ -37,8 +37,6 @@ export default function Home() {
       setIsLoading(false);
     } catch (error) {
       console.error("Error fetching tasks:", error);
-      // Tambahkan logika penanganan error di sini, seperti menampilkan pesan error
-      StatusAlertService.showError("Failed to fetch tasks", "error");
     }
   };
 
@@ -116,8 +114,6 @@ export default function Home() {
       setAction("edit");
     } catch (error) {
       console.error("Error fetching tasks:", error);
-      // Tambahkan logika penanganan error di sini, seperti menampilkan pesan error
-      StatusAlertService.showError("Failed to fetch tasks", "error");
     }
   };
 
