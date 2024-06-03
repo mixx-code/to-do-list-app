@@ -1,5 +1,11 @@
 Ini adalah proyek to-do list yang dibuat dengan nextjs dan database mongodb
 
+## link aplikasi yang sudah di deploy
+
+link : ( https://to-do-list-app-lzpw.vercel.app/ )
+
+
+
 ## INSTALLASI
 
 ```bash
@@ -104,6 +110,3 @@ saya mendeploy aplikasi nextjs saya di vercel
 
 saat melakukan deploy harus menyesuaikan env yang di buat di lokal ke hosting, agar web berjalan dengan baik
 
-## link aplikasi yang sudah di deploy
-
-link : ( https://to-do-list-app-lzpw.vercel.app/ )
