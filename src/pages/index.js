@@ -64,7 +64,6 @@ export default function Home() {
         tugas: "",
         catatan: "",
       }));
-      StatusAlertService.showSuccess("Default success alert!", "success");
       setIsLoadingAdd(false);
       fetchTasks();
       if (!res.status === 200) {
