@@ -76,8 +76,6 @@ export default function Home() {
     } catch (error) {
       console.error("Error fetching tasks:", error);
       setIsLoadingAdd(false);
-      // Tambahkan logika penanganan error di sini, seperti menampilkan pesan error
-      StatusAlertService.showError("Failed to fetch tasks", "error");
     }
   };
 
