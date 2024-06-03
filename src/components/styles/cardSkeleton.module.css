@@ -1,0 +1,113 @@
+.card {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: rgba(128, 128, 128, 1);
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  animation: kedip 2s linear infinite;
+}
+@keyframes kedip {
+  0% {
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+  50% {
+    background-color: rgba(128, 128, 128, 1);
+  }
+  100% {
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+}
+
+.flash {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 70%;
+  height: 200%;
+  background-color: rgba(230, 220, 220, 0.5);
+  transform: rotate(15deg);
+  animation: flashMove 0.8s linear infinite;
+}
+
+@keyframes flashMove {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.title {
+  width: 100%;
+  height: 16px;
+  background-color: #c2bcbc;
+}
+.tugas {
+  width: 100%;
+  height: 14px;
+  background-color: #c2bcbc;
+}
+
+.label {
+  width: 20%;
+  height: 14px;
+  background-color: #c2bcbc;
+}
+
+.catatan {
+  width: 100%;
+  height: 14px;
+  background-color: #c2bcbc;
+}
+
+.garis {
+  width: 100%;
+  height: 1px;
+  border-color: #c2bcbc;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.buttonEdit {
+  width: 50px;
+  height: 20px;
+  background-color: #c2bcbc;
+  border: none;
+  border-radius: 4px;
+}
+
+.buttonDelete {
+  width: 50px;
+  height: 20px;
+  background-color: #c2bcbc;
+  border: none;
+  border-radius: 4px;
+}
+.toggleKerjakan {
+  width: 50px;
+  height: 20px;
+  background-color: #c2bcbc;
+  border: none;
+  border-radius: 4px;
+}
