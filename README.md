@@ -1,19 +1,22 @@
-Ini adalah proyek to-do list yang dibuat dengan nextjs 
+Ini adalah proyek to-do list yang dibuat dengan nextjs
 
 ## INSTALLASI
+
 ```bash
 npx create-next-app@latest
 ```
 
 ikuti langkah yang tersaji di terminal
-serperti : 
+serperti :
+
+```bash
 -memasukan nama aplikasi
 -pilih bahasa (typescript / javascript)
 -eslint yes
 -tailwint css no
 -"src/" directory yes
 -app router no (karena saya pakai yang pages router)
-
+```
 
 ## Memulai
 
@@ -37,9 +40,6 @@ Anda dapat mulai mengedit halaman dengan memodifikasi `pages/index.js` atau memb
 
 Direktori `pages/api` dipetakan ke `/api/*`. File-file dalam direktori ini dianggap sebagai [API routes] bukan halaman React.
 
-
-
-
 ## deploy
 
 saya mendeploy aplikasi nextjs saya di vercel
@@ -47,4 +47,5 @@ saya mendeploy aplikasi nextjs saya di vercel
 saat melakukan deploy harus menyesuaikan env yang di buat di lokal ke hosting, agar web berjalan dengan baik
 
 ## link aplikasi yang sudah di deploy
+
 link : ( https://to-do-list-app-lzpw.vercel.app/ )
