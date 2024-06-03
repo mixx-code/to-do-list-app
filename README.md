@@ -1,4 +1,4 @@
-Ini adalah proyek to-do list yang dibuat dengan nextjs
+Ini adalah proyek to-do list yang dibuat dengan nextjs dan database mongodb
 
 ## INSTALLASI
 
@@ -16,6 +16,64 @@ serperti :
 -tailwint css no
 -"src/" directory yes
 -app router no (karena saya pakai yang pages router)
+```
+
+
+## Database
+
+Saya menggunakan MongoDB sebagai database untuk menyimpan data tugas.
+
+
+Untuk membuat koleksi baru, Anda dapat menggunakan perintah berikut:
+
+```bash
+database.createCollection()
+```
+
+
+## CRUD
+
+### Create
+
+Untuk membuat tugas baru, Anda dapat menggunakan perintah berikut:
+
+```bash
+database.tasks.create(req.body)
+```
+
+### Read
+
+Untuk mengambil semua tugas, Anda dapat menggunakan perintah berikut:
+
+```bash
+database.tasks.find()
+```
+
+Untuk mengambil tugas berdasarkan ID, Anda dapat menggunakan perintah berikut:
+
+```bash
+database.tasks.findOne(id)
+```
+
+### Update
+
+Untuk memperbarui tugas, Anda dapat menggunakan perintah berikut:
+
+```bash
+database.tasks.updateOne(id, req.body)
+```
+
+### Delete
+
+Untuk menghapus tugas, Anda dapat menggunakan perintah berikut:
+
+```bash
+database.tasks.deleteOne(id)
+```
+## Buat ENV
+
+```bash
+MONGODB_URI=**********[rahasia]**************
 ```
 
 ## Memulai
